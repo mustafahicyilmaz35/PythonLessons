@@ -52,7 +52,7 @@ class Env_tic_tac_toe(): #Ortam class ını oluşturduk.
             for j in range(3):
                 if(self.state[i][j] == 0):
                     empty_spaces.append([i,j])
-        random_act = random.choice(list(enumerate(empty_spaces)))[0]
+        random_act = random.choice(list(enumerate(empty_spaces)))[0] #Dizideki her elemana bir numara verir ve bunu bir diziye dönüştürür. Sonundaki index ise o index değerinde sayı döndürmesi içindir.
         action = empty_spaces[random_act]
         self.state[action[0]][action[1]] = self.random_agent_value #ajanın hareketini yani actionları belirledik.
 #class ın dışında main fonksiyonumuz olacak fonksiyonu yazıyoruz
